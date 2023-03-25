@@ -4,7 +4,7 @@ from pathlib import Path
 from django.db import models
 from django.core.management.base import BaseCommand, CommandError
 
-from emissionapp.models import project
+from emissionapp.models import countrydata, value
 
 class Command(BaseCommand):
     help = 'Load data from csv'
@@ -12,7 +12,8 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         # drop the data from the table so that if we rerun the file, we don't repeat values
-        project.objects.all().delete()
+        countrydata.objects.all().delete()
+        value.objects.all().delete()
         print("table dropped successfully")
         # create table again
 
@@ -23,8 +24,7 @@ class Command(BaseCommand):
             next(reader) # skip the header line
             for row in reader:
                 print(row)
-
-                table1 = project.objects.create(
+                table1 = countrydata.objects.create(
                 serialNo = row[0],
                 country = row[1],
                 isocode = row[2],
@@ -34,22 +34,12 @@ class Command(BaseCommand):
         
 
 
-
-        # drop the data from the table so that if we rerun the file, we don't repeat values
-        project.objects.all().delete()
-        print("table dropped successfully")
-
-        # create table again
-
-        # open the file to read it into the database
-        base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        with open(str(base_dir) + '/emissionapp/emissioncsvfile/golfproject.csv', newline='') as f:
             reader = csv.reader(f, delimiter=",")
             next(reader) # skip the header line
             for row in reader:
                 print(row)
 
-                table2 = project.objects.create(
+                table2 = value.objects.create(
                 serialNo = row[0],
                 total = row[4],
                 coal = row[5],
