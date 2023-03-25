@@ -1,4 +1,4 @@
- from django.db import models
+from django.db import models
 
 # Create your models here.
 from django.conf import settings
@@ -18,7 +18,7 @@ class countrydata(models.Model):
 
 
 class value(models.Model):
-     serialNo = models.TextField(primary_key=True)
+    serialNo = models.TextField(primary_key=True)
     total = models.ForeignKey('emissionapp.countrydata', on_delete=models.CASCADE, related_name='values')
     coal = models.TextField()
     oil = models.TextField()
@@ -28,7 +28,6 @@ class value(models.Model):
     other = models.TextField()
 
     def __str__(self):
-         return f'{self.serialNo}, {self.total}, {self.coal}, {self.oil}, {self.gas}
-         {self.cement}, {self.flaring}, {self.other}'
+        return f'{self.serialNo}, {self.total}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}, {self.other}'
 
         
