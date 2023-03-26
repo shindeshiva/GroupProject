@@ -16,7 +16,7 @@ This dataset is essential for anyone wanting to get informed about their environ
  
  2. via the terminal and execute these commands:
  ```
-    pyenv local 3.7.0 # this sets the local version of python to 3.7.0
+    pyenv local 3.10.7 # this sets the local version of python to 3.7.0
     python3 -m venv .venv # this creates the virtual environment for you
     source .venv/bin/activate # this activates the virtual environment
     pip install --upgrade pip [ this is optional]  # this installs pip, and upgrades it if required.
