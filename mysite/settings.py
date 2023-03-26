@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-au!chycg)p@#u*+my3%s^qql87cro)_a&+_qv625g^hug7iuv2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['changerocket-clarionemotion-8000.codio-box.uk', '*']
+ALLOWED_HOSTS = ['localhost', 'americaqueen-distantmarket-8000.codio-box.uk']
 
 
 # Application definition
