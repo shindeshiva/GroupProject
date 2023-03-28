@@ -55,30 +55,29 @@
         </div>
         <div style="padding: 20px;">
             <table class="table table-hover">
+
                 <caption>Table</caption>
                 <thead>
                     <tr>
-                        <th>名称</th>
-                        <th>城市</th>
-                        <th>邮编</th>
+                        <th>serialNo</th>
+                        <th>country</th>
+                        <th>isocode</th>
+                        <th>year</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Tanmay</td>
-                        <td>Bangalore</td>
-                        <td>560001</td>
+                                {%for data in users%}
+                                <tr>
+                        <td>{{data.serialNo}}</td>
+                        <td>{{data.country}}</td>
+                        <td>{{data.isocode}}</td>
+                        <td>{{data.year}}</td>
                     </tr>
-                    <tr>
-                        <td>Sachin</td>
-                        <td>Mumbai</td>
-                        <td>400003</td>
-                    </tr>
-                    <tr>
-                        <td>Uma</td>
-                        <td>Pune</td>
-                        <td>411027</td>
-                    </tr>
+
+          
+
+              {%endfor%}
+                    
                 </tbody>
             </table>
 	</body>
