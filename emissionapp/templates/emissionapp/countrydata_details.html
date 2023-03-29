@@ -43,7 +43,7 @@
 				</ul>
 			</div>
 		</nav>
-        <h1 class="title">Emissions by Country</h1>
+        <h1 class="title">Emissions by Country_countrydata</h1>
 
         <div class="container">
           <ul class="nav nav-tabs">
@@ -54,29 +54,30 @@
         </div>
         <div style="padding: 20px;">
             <table class="table table-hover">
-
                 <caption>Table</caption>
                 <thead>
                     <tr>
-                        <th>serialNo</th>
-                        <th>country</th>
-                        <th>isocode</th>
-                        <th>year</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Postcode</th>
                     </tr>
                 </thead>
                 <tbody>
-                                {%for data in users%}
-                                <tr>
-                        <td><a href="value_details.html">{{data.serialNo}}</td>
-                        <td>{{data.country}}</td>
-                        <td>{{data.isocode}}</td>
-                        <td>{{data.year}}</td>
+                    <tr>
+                        <td>Tanmay</td>
+                        <td>Bangalore</td>
+                        <td>560001</td>
                     </tr>
-
-          
-
-              {%endfor%}
-                    
+                    <tr>
+                        <td>Sachin</td>
+                        <td>Mumbai</td>
+                        <td>400003</td>
+                    </tr>
+                    <tr>
+                        <td>Uma</td>
+                        <td>Pune</td>
+                        <td>411027</td>
+                    </tr>
                 </tbody>
             </table>
 	</body>
