@@ -11,7 +11,7 @@ This dataset is essential for anyone wanting to get informed about their environ
 
  1. We need to enter our file 
  ```
-    cd Golf 
+    cd GroupProject 
 ```
  
  2. via the terminal and execute these commands:
