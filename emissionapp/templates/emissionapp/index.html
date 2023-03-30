@@ -47,11 +47,12 @@
 
         <div class="container">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="index.html ">Home</a></li>
-            <li><a href="countrydata.html ">countrydata</a></li>
-            <li><a href="value.html">value</a></li>
+            <li class="active"><a href="/index">Home</a></li>
+            <li><a href="/countrydata">countrydata</a></li>
+            <li><a href="/value">value</a></li>
           </ul>
-        <img src="../imga/1.png" alt="picture 1" style="float:left; margin-right:200px;">
+          {% load static %}
+        <img src="{% static 'images/1.png' %}" alt="picture 1" style="float:left; margin-right:200px;">
          <p style="margin-top: 50px;font-size: 20px;""> Our current demand for natural resources is at an all-time high and continues to grow - including the need for food, clothing, water, housing, infrastructure and other aspects of life.<br></p>
          <p style="margin-top: 10px;font-size: 20px;"">Resource extraction has more than tripled since 1970, with the use of fossil fuels increasing by 45%.<br></p>
          <p style="margin-top: 10px;font-size: 20px;"">Our collection delves into global CO2 emissions at the national level, enabling a better understanding of how much each country contributes to the cumulative global human impact on the climate.It contains information on total emissions as well as coal, oil, gas, cement production and combustion and other sources.<br></p>
