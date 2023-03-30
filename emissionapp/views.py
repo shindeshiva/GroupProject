@@ -14,3 +14,9 @@ def display_value_data(request):
     # values = value.objects.all()
     return render(request, 'emissionapp/value.html')
 
+def display_login(request):
+    return render(request, 'emissionapp/log.html')
+
+def display_creataccount(request):
+    return render(request, 'emissionapp/sign.html')
+
