@@ -67,23 +67,20 @@
                         <th>other</th>
                     </tr>
                 </thead>
-                  <tbody>
+               <tbody>
+                                {%for data in values%}
                     <tr>
-                        <td><a href="value_details.html">Tanmay</td>
-                        <td>Bangalore</td>
-                        <td>560001</td>
-                    </tr>
-                    <tr>
-                        <td>Sachin</td>
-                        <td>Mumbai</td>
-                        <td>400003</td>
-                    </tr>
-                    <tr>
-                        <td>Uma</td>
-                        <td>Pune</td>
-                        <td>411027</td>
-                    </tr>
-                </tbody>
+                        <td>{{data.serialNo}}</td>
+                        <td>{{data.total}}</td>
+                        <td>{{data.coal}}</td>
+                        <td>{{data.oil}}</td>
+                        <td>{{data.gas}}</td>
+                        <td>{{data.cement}}</td>
+                        <td>{{data.flaringt}}</td>
+                        <td>{{data.other}}</td>                         
+                     </tr> 
+                 </tbody> 
+                 {%endfor%}
             </table>
 	</body>
 </html>
