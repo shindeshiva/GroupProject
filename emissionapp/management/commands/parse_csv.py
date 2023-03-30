@@ -33,7 +33,7 @@ class Command(BaseCommand):
                 table1.save()
         
 
-
+        with open(str(base_dir) + '/emissionapp/emissioncsvfile/golfproject.csv', newline='') as f:
             reader = csv.reader(f, delimiter=",")
             next(reader) # skip the header line
             for row in reader:
