@@ -41,7 +41,7 @@ class Command(BaseCommand):
 
                 table2 = value.objects.create(
                 serialNo = row[0],
-                total = row[4],
+                total = countrydata.objects.filter(serialNo = row[0]).first(),
                 coal = row[5],
                 oil = row[6],
                 gas = row[7],
