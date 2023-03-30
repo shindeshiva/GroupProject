@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import countrydata
+from .models import countrydata,value
 
 def display_country_data(request):
     users = countrydata.objects.all()
@@ -11,8 +11,8 @@ def display_index(request):
     return render(request, 'emissionapp/index.html')
 
 def display_value_data(request):
-    # values = value.objects.all()
-    return render(request, 'emissionapp/value.html')
+    values = value.objects.all()
+    return render(request, 'emissionapp/value.html',{'values' : values})
 
 def display_login(request):
     return render(request, 'emissionapp/log.html')
