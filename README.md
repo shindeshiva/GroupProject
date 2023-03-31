@@ -5,7 +5,6 @@
 This dataset provides an in-depth look into the global CO2 emissions at the country level, allowing for a better understanding of how much each country contributes to the global cumulative human impact on climate. 
 It contains information on total emissions as well as from coal, oil, gas, cement production and flaring, and other sources.   
 
-The data also provides a breakdown of per capita CO2 emission per country - showing which countries are leading in pollution levels and identifying potential areas where reduction efforts should be concentrated. 
 
 ## 2.  *## Do the set up work*
 1. We need to enter our file 
