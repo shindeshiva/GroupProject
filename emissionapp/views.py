@@ -1,5 +1,5 @@
-from django.shortcuts import render, get_object_or_404
 from .models import countrydata,value
+from django.shortcuts import render
 
 def display_country_data(request):
     users = countrydata.objects.all()
