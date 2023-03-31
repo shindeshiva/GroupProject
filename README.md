@@ -1,3 +1,4 @@
+
 #  Emissions by Country
 
 ## 1. *What is it?*
@@ -6,14 +7,11 @@ It contains information on total emissions as well as from coal, oil, gas, cemen
 
 The data also provides a breakdown of per capita CO2 emission per country - showing which countries are leading in pollution levels and identifying potential areas where reduction efforts should be concentrated. 
 
-This dataset is essential for anyone wanting to get informed about their environmental footprint or research international development trends.  
-## 2.  *We need to build an environment*
-
- 1. We need to enter our file 
+## 2.  *## Do the set up work*
+1. We need to enter our file 
  ```
-    cd GroupProject 
-```
- 
+ cd GroupProject
+``` 
  2. via the terminal and execute these commands:
  ```
     pyenv local 3.10.7 # this sets the local version of python to 3.7.0
@@ -41,3 +39,19 @@ If you're doing this on another platform, then you might need to use this instea
 ```
 
 If it went well, then you should see the python rocket launching your site.
+## 4.   *What you can do with this application*
+
+You can view global CO2 emissions for each country so that you can better understand the extent to which each country contributes to the cumulative global human impact on the climate. 
+
+It contains information on total emissions as well as from coal, oil, gas, cement production and combustion and other sources
+1. We have a page for home, country data, and values.
+2. You can go through country data to see each country
+3. You can go through values to see total emissions and information on coal, oil, gas, cement production and combustion and other sources.
+## 5. Background
+
+The data is come from kaggle:
+**[link(https://www.kaggle.com/datasets/thedevastator/global-fossil-co2-emissions-by-country-2002-2022)]**
+## 6.Contributing
+Contributions are welcome! Please fork this repository and submit a pull request.
+## 7.  License
+This project is licensed under the MIT License. See the file for more information.`LICENSE`
